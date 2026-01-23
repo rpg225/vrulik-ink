@@ -1,0 +1,20 @@
+app/
+├── layout.tsx
+├── page.tsx
+├── globals.css
+
+components/
+├── Navbar.tsx
+├── Hero.tsx
+├── About.tsx
+├── Gallery.tsx
+├── CTA.tsx
+├── Footer.tsx
+
+components/ui/
+├── Button.tsx
+├── Section.tsx
+├── Card.tsx
+
+lib/
+├── animations.ts
