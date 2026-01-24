@@ -1,0 +1,57 @@
+.nav {
+  height: 202px;
+  width: 100%;
+  background: radial-gradient(ellipse at center, #0a0a0a 0%, #000 70%);
+  position: relative;
+}
+
+/* Full-width nav row */
+/* Links row: fixed-width group centered like Figma (833px) */
+.navRow {
+  position: absolute;
+  top: 140px;               /* keep your working vertical position */
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 833px;             /* <-- from Figma (833 × 64) */
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* spreads 4 items across the 833px group */
+}
+
+/* Link typography: match Figma (yours was uppercase + letter spacing) */
+.navRow a {
+  color: #f5f5f5;
+  text-decoration: none;
+  opacity: 0.85;
+
+  font-size: 24px;          /* <-- Figma shows 24 */
+  font-weight: 400;
+  letter-spacing: 0;        /* <-- Figma shows 0% */
+  text-transform: none;     /* <-- Figma is Title Case */
+}
+
+.navRow a:hover {
+  opacity: 1;
+}
+
+/* Center floating logo */
+.logo {
+  position: absolute;
+  top: 24px;               /* ⬆ move logo up */
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 300px;
+  height: 110px;
+
+  pointer-events: none;
+}
+
+.logo :global(svg),
+.logo :global(img) {
+  transform: scale(1.35);
+  transform-origin: center;
+}
