@@ -1,3 +1,5 @@
+/* Gallery.module.css */
+
 .section {
   width: 100%;
   background: #0b0b0b;
@@ -7,35 +9,31 @@
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 64px;
+  padding: 0 80px;
 }
 
-.header {
-  margin-bottom: 48px;
-}
-
+/* "Gallery" label */
 .label {
-  display: block;
+  display: inline-block;
   font-size: 13px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #888;
-  margin-bottom: 8px;
+  color: #bfbfbf;
+  margin-bottom: 16px;
 }
 
+/* "Selected Work" */
 .heading {
-  font-size: 36px;
-  color: #fff;
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #ffffff;
+  margin-bottom: 64px;
 }
 
+/* Grid */
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
-}
-
-.footer {
-  margin-top: 32px;
-  font-size: 13px;
-  color: #777;
 }

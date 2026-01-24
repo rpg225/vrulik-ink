@@ -42,12 +42,12 @@ export default function About() {
             I focus on calm, one-on-one sessions and custom designs built around
             your ideas. My process is slow, intentional, and collaborative.
           </p>
-
-          <div className={styles.tags}>
-            <span>Blackwork</span>
-            <span>Fine Line</span>
-            <span>Custom Concepts</span>
-          </div>
+            
+            <ul className={styles.tags}>
+                <li>Blackwork</li>
+                <li>Fine Line</li>
+                <li>Custom Concepts</li>
+            </ul>
 
           <div className={styles.meta}>
             <p>Private studio · By consultation only · Ottawa</p>

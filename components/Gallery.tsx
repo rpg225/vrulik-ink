@@ -9,44 +9,31 @@ const images = [
   "/card-files/card-size-tattoo-arm-eye.png",
   "/card-files/card-size-tattoo-arm-skull.png",
   "/card-files/card-size-tattoo-lips-forest.png",
+  "/card-files/card-size-tattoo-flowers-arm.png",
+  "/card-files/card-size-girl-flowers.png",
+
 ];
 
 export default function Gallery() {
   return (
     <section className={styles.section} id="gallery">
       <div className={styles.container}>
-        <motion.div
-          className={styles.header}
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          <span className={styles.label}>Gallery</span>
-          <h2 className={styles.heading}>Selected Work</h2>
-        </motion.div>
-
+        <span className={styles.label}>Gallery</span>
+        <h2 className={styles.heading}>Selected Work</h2>
         <div className={styles.grid}>
           {images.map((src, i) => (
             <motion.div
               key={src}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{
-                duration: 0.5,
-                delay: i * 0.05,
-                ease: "easeOut",
-              }}
+              transition={{ duration: 0.5, delay: i * 0.05 }}
             >
-              <Card image={src} />
+              {/* IMPORTANT: src prop */}
+              <Card src={src} />
             </motion.div>
           ))}
         </div>
-
-        <p className={styles.footer}>
-          More work available on Instagram @vrulik.ink
-        </p>
       </div>
     </section>
   );

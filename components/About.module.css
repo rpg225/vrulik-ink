@@ -54,17 +54,22 @@
 
 .tags {
   display: flex;
-  gap: 12px;
+  gap: 16px;
   margin-bottom: 24px;
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
 }
 
-.tags span {
-  padding: 6px 14px;
+.tags li {
   font-size: 13px;
-  border-radius: 999px;
-  border: 1px solid #ddd;
-  color: #555;
-  background: #fafafa;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #777;
+  background: none;
+  border: none;
+  padding: 0;
+  border-radius: 0;
 }
 
 .meta p {

@@ -15,7 +15,6 @@ export default function Card({ src, alt = "" }: CardProps) {
         fill
         className={styles.image}
         sizes="(max-width: 1024px) 100vw, 33vw"
-        priority={false}
       />
     </div>
   );
