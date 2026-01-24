@@ -1,16 +1,28 @@
-'use client';
-
-import styles from './Button.module.css';
+import styles from "./Button.module.css";
 
 type ButtonProps = {
   children: React.ReactNode;
-  onClick?: () => void;
+  href?: string;
+  variant?: "default" | "dark";
 };
 
-export default function Button({ children, onClick }: ButtonProps) {
-  return (
-    <button className={styles.button} onClick={onClick}>
-      {children}
-    </button>
-  );
+export default function Button({
+  children,
+  href,
+  variant = "default",
+}: ButtonProps) {
+  const className =
+    variant === "dark"
+      ? `${styles.button} ${styles.dark}`
+      : styles.button;
+
+  if (href) {
+    return (
+      <a href={href} className={className}>
+        {children}
+      </a>
+    );
+  }
+
+  return <button className={className}>{children}</button>;
 }

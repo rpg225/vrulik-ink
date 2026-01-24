@@ -51,7 +51,7 @@ export default function Hero() {
         </motion.p>
 
         <motion.div variants={item}>
-          <Button>Book a Consultation</Button>
+          <Button >Book a Consultation</Button>
         </motion.div>
 
         <motion.span variants={item} className={styles.helper}>
