@@ -1,0 +1,11 @@
+.footer {
+  width: 100%;
+  background-color: #0b0b0b; /* zinc-600 equivalent */
+}
+
+.inner {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 16px;
+  text-align: center;
+  color: #ffffff;
+}
