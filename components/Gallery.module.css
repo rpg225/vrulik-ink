@@ -1,0 +1,41 @@
+.section {
+  width: 100%;
+  background: #0b0b0b;
+  padding: 120px 0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 64px;
+}
+
+.header {
+  margin-bottom: 48px;
+}
+
+.label {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.heading {
+  font-size: 36px;
+  color: #fff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.footer {
+  margin-top: 32px;
+  font-size: 13px;
+  color: #777;
+}

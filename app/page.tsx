@@ -3,6 +3,9 @@
 import { animate } from "framer-motion";
 import{ motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero"
+import About from "@/components/About"
+import Gallery from "@/components/Gallery";
 
 export default function  Home () {
   return (
@@ -13,8 +16,9 @@ export default function  Home () {
       style={{ minHeight: "100vh" }}
     >
       <Navbar />
-
-      <h1>Vrulik Ink </h1>
+      <Hero />
+      <About />
+      <Gallery />
 
     </motion.main>
   )

@@ -1,0 +1,12 @@
+.card {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4; /* matches your Figma cards */
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0b0b0b; /* prevents black flash */
+}
+
+.image {
+  object-fit: cover;
+}
