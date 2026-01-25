@@ -37,7 +37,7 @@
   opacity: 1;
 }
 
-
+/* Center floating logo */
 .logo {
   position: absolute;
   top: 24px;               /* ⬆ move logo up */
