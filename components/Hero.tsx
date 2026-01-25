@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "./Hero.module.css";
+import { cubicBezier } from "framer-motion";
 import Button from "@/components/ui/Button";
 
 
@@ -25,7 +26,7 @@ const item = {
     x: 0,
     transition: {
       duration: 0.6,
-      ease: [0.22, 1, 0.36, 1],
+      ease: cubicBezier(0.25, 0.1, 0.25, 1),
     },
   },
 };
