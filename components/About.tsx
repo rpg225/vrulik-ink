@@ -38,7 +38,7 @@ export default function About() {
           <h2 className={styles.heading}>Hi, I’m Dasha</h2>
 
           <p className={styles.body}>
-            I’m a private, appointment-only tattoo artist working under Vrulik.
+            I’m a private, appointment-only tattoo artist working under VruLik.
             I focus on calm, one-on-one sessions and custom designs built around
             your ideas. My process is slow, intentional, and collaborative.
           </p>
