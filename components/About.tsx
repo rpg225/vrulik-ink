@@ -52,7 +52,7 @@ export default function About() {
           <div className={styles.meta}>
             <p>Private studio · By consultation only · Ottawa</p>
             <p>Instagram: @vrulik.ink</p>
-            <p>Brand: Vrulik</p>
+            <p>Brand: VruLik</p>
           </div>
         </motion.div>
       </div>
